@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Last Signal · An iPhone driving game · Pripyat, 26 April 1986</title>
+<meta name="description" content="Last Signal is an iPhone driving game: one road out of Pripyat, one cold night, a radio that will not stop talking. In development by Glenn Svendsen.">
+<meta name="theme-color" content="#05070b">
+<link rel="canonical" href="https://glennsvendsen.github.io/last-signal/">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" href="favicon.png" sizes="64x64">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="Last Signal">
+<meta property="og:description" content="One road out of Pripyat. One cold night. A radio that will not stop talking. An iPhone driving game in development.">
+<meta property="og:url" content="https://glennsvendsen.github.io/last-signal/">
+<meta property="og:image" content="https://glennsvendsen.github.io/last-signal/media/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preload" href="fonts/russo-one.woff" as="font" type="font/woff" crossorigin>
+<link rel="preload" href="fonts/plex-mono.woff" as="font" type="font/woff" crossorigin>
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add('js')</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "VideoGame",
+  "name": "Last Signal",
+  "description": "An iPhone driving game set in Pripyat on 26 April 1986: one road out, one cold night, a radio that will not stop talking.",
+  "genre": ["Driving", "Action"],
+  "gamePlatform": "iOS",
+  "applicationCategory": "Game",
+  "url": "https://glennsvendsen.github.io/last-signal/",
+  "image": "https://glennsvendsen.github.io/last-signal/media/og-image.jpg",
+  "author": { "@type": "Person", "name": "Glenn Svendsen", "url": "https://glennsvendsen.github.io/" }
+}
+</script>
+</head>
+
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="bar" data-bar>
+  <a class="mark" href="#top" aria-label="Last Signal, top of page">LAST SIGNAL</a>
+  <nav aria-label="Sections">
+    <a href="#trailer">Trailer</a>
+    <a href="#night">The night</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#credits">Credits</a>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ============================================================ HERO -->
+<section class="hero" id="top" aria-labelledby="title">
+  <div class="hero-media">
+    <picture>
+      <source srcset="media/hero.webp" type="image/webp">
+      <img src="media/hero.jpg" width="1672" height="941" alt="A red Lada parked on a snow-covered road at night, the reactor stack and a single sodium street lamp glowing in the fog behind it." fetchpriority="high">
+    </picture>
+    <!-- Session A delivers media/loop-hero.mp4; main.js attaches it only if the file exists. -->
+    <video data-src="media/loop-hero.mp4" muted loop playsinline preload="none" poster="media/hero.jpg" aria-hidden="true" tabindex="-1"></video>
+  </div>
+  <div class="hero-veil" aria-hidden="true"></div>
+
+  <div class="hero-copy">
+    <p class="stamp" data-type>26.04.1986 · 01:23:45</p>
+    <h1 id="title">LAST<br>SIGNAL</h1>
+    <p class="lede">One road out of Pripyat. One cold night.<br>A radio that will not stop talking.</p>
+    <p class="status"><span class="dot" aria-hidden="true"></span>An iPhone driving game · In development</p>
+  </div>
+
+  <a class="cue" href="#trailer" aria-label="Scroll to the trailer"><span></span></a>
+</section>
+
+<!-- ============================================================ TRAILER -->
+<section class="band" id="trailer" aria-labelledby="trailer-h">
+  <div class="wrap">
+    <p class="label reveal">01 · Transmission</p>
+    <h2 id="trailer-h" class="reveal">Watch the trailer</h2>
+
+    <figure class="film reveal">
+      <!-- Session A delivers media/last-signal-trailer-1080.mp4, -720.mp4 and trailer.vtt. -->
+      <video controls preload="none" playsinline poster="media/poster.jpg" width="1920" height="1080">
+        <source src="media/last-signal-trailer-720.mp4" type="video/mp4" media="(max-width: 800px)">
+        <source src="media/last-signal-trailer-1080.mp4" type="video/mp4">
+        <track kind="captions" src="media/trailer.vtt" srclang="en" label="English" default>
+        <p>Your browser cannot play this video. <a href="media/last-signal-trailer-1080.mp4">Download the trailer</a>.</p>
+      </video>
+      <figcaption>Real-time footage captured in-engine. Sound on.</figcaption>
+    </figure>
+  </div>
+</section>
+
+<!-- ============================================================ PREMISE -->
+<section class="band band--deep" id="premise" aria-labelledby="premise-h">
+  <div class="wrap narrow">
+    <p class="label reveal">02 · Premise</p>
+    <h2 id="premise-h" class="reveal">Somebody is still on the radio</h2>
+    <p class="body reveal">It is the night of 26 April 1986. The town is emptying, the roads are snowed in, and the only voice you have is a dispatcher telling you where to go next. Keep driving. The police are looking for you, and so is whatever is in the sky.</p>
+
+    <div class="tx-list">
+      <blockquote class="tx reveal">
+        <p class="ru" lang="ru">Ждём на перекрёстке. Горит файер, не пропустишь.</p>
+        <p class="en">Waiting at the crossroads. There’s a flare, you can’t miss it.</p>
+      </blockquote>
+      <blockquote class="tx reveal">
+        <p class="ru" lang="ru">Радиационный фон растёт. Пять рентген в час.</p>
+        <p class="en">Background is rising. Five roentgen an hour.</p>
+      </blockquote>
+      <blockquote class="tx reveal">
+        <p class="ru" lang="ru">Дозиметристам. Уровень превышен. Не останавливаться.</p>
+        <p class="en">Dosimetry. Level exceeded. Do not stop.</p>
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ THE NIGHT -->
+<section class="band" id="night" aria-labelledby="night-h">
+  <div class="wrap">
+    <p class="label reveal">03 · The night</p>
+    <h2 id="night-h" class="reveal">Five things you will remember</h2>
+
+    <article class="chapter reveal">
+      <div class="chapter-media">
+        <video data-src="media/loop-chase.mp4" muted loop playsinline preload="none" poster="media/still-3.jpg" aria-hidden="true" tabindex="-1"></video>
+        <picture>
+          <source srcset="media/still-3.webp" type="image/webp">
+          <img src="media/still-3.jpg" width="1280" height="720" loading="lazy" alt="Chase view of the red Lada driving up a snowed-in road at night, headlights cutting through falling snow.">
+        </picture>
+      </div>
+      <div class="chapter-copy">
+        <p class="num">I</p>
+        <h3>The chase</h3>
+        <p>Sirens find you before the headlights do. Slide through the snow, slip past slow traffic, and break line of sight before the patrols close in. A helicopter will join them if you stay on the roads long enough.</p>
+      </div>
+    </article>
+
+    <article class="chapter chapter--flip reveal">
+      <div class="chapter-media">
+        <video data-src="media/loop-signal.mp4" muted loop playsinline preload="none" poster="media/still-1.jpg" aria-hidden="true" tabindex="-1"></video>
+        <picture>
+          <source srcset="media/still-1.webp" type="image/webp">
+          <img src="media/still-1.jpg" width="1280" height="720" loading="lazy" alt="Low angle behind the Lada at a crossroads at night, orange street lamps burning in the fog.">
+        </picture>
+      </div>
+      <div class="chapter-copy">
+        <p class="num">II</p>
+        <h3>The signal</h3>
+        <p>A voice on the radio sends you from flare to flare. Pick up what people left on the road, refuel at a forecourt, patch the car up at a garage. Every task is spoken in Russian and subtitled in English.</p>
+      </div>
+    </article>
+
+    <article class="chapter reveal">
+      <div class="chapter-media">
+        <video data-src="media/loop-cold.mp4" muted loop playsinline preload="none" poster="media/still-5.jpg" aria-hidden="true" tabindex="-1"></video>
+        <picture>
+          <source srcset="media/still-5.webp" type="image/webp">
+          <img src="media/still-5.jpg" width="1280" height="720" loading="lazy" alt="Tyre tracks curving through deep snow beside an industrial road at night.">
+        </picture>
+      </div>
+      <div class="chapter-copy">
+        <p class="num">III</p>
+        <h3>The cold</h3>
+        <p>Fog, falling snow and half-dead sodium lamps. Your tyres leave tracks that stay. Snowbanks pile along the road in patches, and the world is dark on purpose.</p>
+      </div>
+    </article>
+
+    <article class="chapter chapter--flip reveal">
+      <div class="chapter-media">
+        <video data-src="media/loop-zone.mp4" muted loop playsinline preload="none" poster="media/still-4.jpg" aria-hidden="true" tabindex="-1"></video>
+        <picture>
+          <source srcset="media/still-4.webp" type="image/webp">
+          <img src="media/still-4.jpg" width="1280" height="720" loading="lazy" alt="A helicopter searchlight sweeping a pool of pale light across the snow beside the road.">
+        </picture>
+      </div>
+      <div class="chapter-copy">
+        <p class="num">IV</p>
+        <h3>The zone</h3>
+        <p>Past the forest a searchlight sweeps the road. Near the reactor the Geiger climbs, the picture greys and grains, and the car slowly gives up. The police will not follow you in.</p>
+      </div>
+    </article>
+
+    <article class="chapter reveal">
+      <div class="chapter-media">
+        <video data-src="media/loop-night.mp4" muted loop playsinline preload="none" poster="media/still-8.jpg" aria-hidden="true" tabindex="-1"></video>
+        <picture>
+          <source srcset="media/still-8.webp" type="image/webp">
+          <img src="media/still-8.jpg" width="1280" height="720" loading="lazy" alt="The Last Signal log screen showing rank, last night against your best, recent nights and lifetime figures.">
+        </picture>
+      </div>
+      <div class="chapter-copy">
+        <p class="num">V</p>
+        <h3>One more night</h3>
+        <p>The run never ends, only you do. A log keeps your furthest night, your recent runs and your rank, from Recruit up to Last Signal.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- ============================================================ GALLERY -->
+<section class="band band--deep" id="gallery" aria-labelledby="gallery-h">
+  <div class="wrap">
+    <p class="label reveal">04 · Gallery</p>
+    <h2 id="gallery-h" class="reveal">From the road</h2>
+
+    <ul class="grid" data-gallery>
+      <li><a href="media/still-1.jpg" data-caption="Eye level, looking toward the plant."><picture><source srcset="media/still-1.webp" type="image/webp"><img src="media/still-1.jpg" width="1280" height="720" loading="lazy" alt="Low view behind the Lada at a crossroads at night, orange street lamps in the fog."></picture></a></li>
+      <li><a href="media/still-2.jpg" data-caption="The plant, 250 metres out."><picture><source srcset="media/still-2.webp" type="image/webp"><img src="media/still-2.jpg" width="1280" height="720" loading="lazy" alt="Street lamps and the dark bulk of the reactor hall across an empty snowfield, red beacons on the stack above."></picture></a></li>
+      <li><a href="media/still-3.jpg" data-caption="Chase view."><picture><source srcset="media/still-3.webp" type="image/webp"><img src="media/still-3.jpg" width="1280" height="720" loading="lazy" alt="The Lada driving up a snowed-in road, seen from just behind and above."></picture></a></li>
+      <li><a href="media/still-4.jpg" data-caption="The helicopter’s searchlight."><picture><source srcset="media/still-4.webp" type="image/webp"><img src="media/still-4.jpg" width="1280" height="720" loading="lazy" alt="A pool of pale searchlight on the snow beside the road."></picture></a></li>
+      <li><a href="media/still-5.jpg" data-caption="Tracks in the snow."><picture><source srcset="media/still-5.webp" type="image/webp"><img src="media/still-5.jpg" width="1280" height="720" loading="lazy" alt="Tyre tracks curving across deep snow beside the road."></picture></a></li>
+      <li><a href="media/still-6.jpg" data-caption="Blue light in the fog."><picture><source srcset="media/still-6.webp" type="image/webp"><img src="media/still-6.jpg" width="1280" height="720" loading="lazy" alt="The Lada on a snowy road with a cold blue glow from emergency lights."></picture></a></li>
+      <li><a href="media/still-7.jpg" data-caption="The forest road."><picture><source srcset="media/still-7.webp" type="image/webp"><img src="media/still-7.jpg" width="1280" height="720" loading="lazy" alt="The Lada driving between dead pine trees on a snowy forest road."></picture></a></li>
+      <li><a href="media/still-8.jpg" data-caption="The log."><picture><source srcset="media/still-8.webp" type="image/webp"><img src="media/still-8.jpg" width="1280" height="720" loading="lazy" alt="The log screen with rank, last night and recent nights."></picture></a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- ============================================================ IPHONE -->
+<section class="band" id="iphone" aria-labelledby="iphone-h">
+  <div class="wrap phone-row">
+    <div class="phone reveal">
+      <div class="phone-frame">
+        <video data-src="media/phone-1.mp4" muted loop playsinline preload="none" poster="media/phone-1.jpg" aria-hidden="true" tabindex="-1"></video>
+        <picture>
+          <source srcset="media/phone-1.webp" type="image/webp">
+          <img src="media/phone-1.jpg" width="585" height="1266" loading="lazy" alt="The game in portrait on an iPhone: the Lada driving a snowy road at night.">
+        </picture>
+      </div>
+    </div>
+    <div class="phone-copy">
+      <p class="label reveal">05 · On your iPhone</p>
+      <h2 id="iphone-h" class="reveal">Built for the phone</h2>
+      <dl class="facts reveal">
+        <div><dt>Platform</dt><dd>iPhone</dd></div>
+        <div><dt>Play</dt><dd>Portrait or landscape</dd></div>
+        <div><dt>Mode</dt><dd>Endless run, chained tasks</dd></div>
+        <div><dt>Camera</dt><dd>Chase, low, standard, high</dd></div>
+        <div><dt>Voice</dt><dd>Russian radio, English subtitles</dd></div>
+        <div><dt>Status</dt><dd>In development</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ SOUND -->
+<section class="band band--deep" id="sound" aria-labelledby="sound-h">
+  <div class="wrap narrow">
+    <p class="label reveal">06 · Sound</p>
+    <h2 id="sound-h" class="reveal">Listen with headphones</h2>
+    <p class="body reveal">The radio voices and the music are made by the developer. The rest is layered from recorded effects: every crash is a different crunch over a low thump, passing trucks fade into the fog, and the wind rises only when a gust does.</p>
+  </div>
+</section>
+
+<!-- ============================================================ CREDITS -->
+<section class="band" id="credits" aria-labelledby="credits-h">
+  <div class="wrap narrow">
+    <p class="label reveal">07 · Credits</p>
+    <h2 id="credits-h" class="reveal">Last Signal</h2>
+    <p class="muted reveal">Pripyat, 26 April 1986</p>
+
+    <dl class="credits reveal">
+      <div><dt>Game design and direction</dt><dd>Glenn Svendsen</dd></div>
+      <div><dt>Music and radio voices</dt><dd>Glenn Svendsen</dd></div>
+      <div><dt>Vehicles, figures, textures</dt><dd>benceaki · PSX Soviet packs</dd></div>
+      <div><dt>Props and textures</dt><dd>Poly Haven · CC0</dd></div>
+      <div><dt>Type</dt><dd>IBM Plex Mono, Russo One · SIL OFL<br>Special Elite · Apache 2.0</dd></div>
+      <div><dt>Sound effects</dt><dd>Freesound and Pixabay contributors</dd></div>
+      <div><dt>Made with</dt><dd>Unity</dd></div>
+    </dl>
+
+    <p class="maker reveal">Made by <a href="https://glennsvendsen.github.io/">Glenn Svendsen</a>.</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>Last Signal is a work of fiction inspired by the night of 26 April 1986. Footage was captured in-engine.</p>
+    <p class="muted">© <span data-year>2026</span> Glenn Svendsen</p>
+  </div>
+</footer>
+
+<!-- lightbox -->
+<dialog class="lightbox" data-lightbox aria-label="Image viewer">
+  <button class="lb-close" type="button" aria-label="Close" data-lb-close>×</button>
+  <button class="lb-nav lb-prev" type="button" aria-label="Previous image" data-lb-prev>‹</button>
+  <figure>
+    <img alt="" data-lb-img>
+    <figcaption data-lb-cap></figcaption>
+  </figure>
+  <button class="lb-nav lb-next" type="button" aria-label="Next image" data-lb-next>›</button>
+</dialog>
+
+<script src="main.js" defer></script>
+</body>
+</html>
