@@ -61,9 +61,9 @@
   <div class="hero-media">
     <picture>
       <source srcset="media/hero.webp" type="image/webp">
-      <img src="media/hero.jpg" width="1672" height="941" alt="A red Lada parked on a snow-covered road at night, the reactor stack and a single sodium street lamp glowing in the fog behind it." fetchpriority="high">
+      <img src="media/hero.jpg" width="1920" height="1080" alt="The title painting: a red car on a snowy road facing the power plant." fetchpriority="high">
     </picture>
-    <!-- Session A delivers media/loop-hero.mp4; main.js attaches it only if the file exists. -->
+    <!-- main.js attaches the loop only if the file exists. -->
     <video data-src="media/loop-hero.mp4" muted loop playsinline preload="none" poster="media/hero.jpg" aria-hidden="true" tabindex="-1"></video>
   </div>
   <div class="hero-veil" aria-hidden="true"></div>
@@ -85,12 +85,12 @@
     <h2 id="trailer-h" class="reveal">Watch the trailer</h2>
 
     <figure class="film reveal">
-      <!-- Session A delivers media/last-signal-trailer-1080.mp4, -720.mp4 and trailer.vtt. -->
-      <video controls preload="none" playsinline poster="media/poster.jpg" width="1920" height="1080">
-        <source src="media/last-signal-trailer-720.mp4" type="video/mp4" media="(max-width: 800px)">
-        <source src="media/last-signal-trailer-1080.mp4" type="video/mp4">
-        <track kind="captions" src="media/trailer.vtt" srclang="en" label="English" default>
-        <p>Your browser cannot play this video. <a href="media/last-signal-trailer-1080.mp4">Download the trailer</a>.</p>
+      <video controls preload="none" playsinline poster="media/trailer-poster.jpg" width="1920" height="1080">
+        <source src="media/trailer-720p.mp4" type="video/mp4" media="(max-width: 800px)">
+        <source src="media/trailer-1080p.mp4" type="video/mp4">
+        <track kind="captions" src="media/trailer.en.vtt" srclang="en" label="English" default>
+        <track kind="captions" src="media/trailer.ru.vtt" srclang="ru" label="Русский">
+        <p>Your browser cannot play this video. <a href="media/trailer-1080p.mp4">Download the trailer</a>.</p>
       </video>
       <figcaption>Real-time footage captured in-engine. Sound on.</figcaption>
     </figure>
@@ -129,10 +129,10 @@
 
     <article class="chapter reveal">
       <div class="chapter-media">
-        <video data-src="media/loop-chase.mp4" muted loop playsinline preload="none" poster="media/still-3.jpg" aria-hidden="true" tabindex="-1"></video>
+        <video data-src="media/loop-chase.mp4" muted loop playsinline preload="none" poster="media/loop-chase.jpg" aria-hidden="true" tabindex="-1"></video>
         <picture>
-          <source srcset="media/still-3.webp" type="image/webp">
-          <img src="media/still-3.jpg" width="1280" height="720" loading="lazy" alt="Chase view of the red Lada driving up a snowed-in road at night, headlights cutting through falling snow.">
+          <source srcset="media/loop-chase.webp" type="image/webp">
+          <img src="media/loop-chase.jpg" width="1280" height="720" loading="lazy" alt="The red car at speed down a snowy night street, snow spraying from its wheels, police lights behind.">
         </picture>
       </div>
       <div class="chapter-copy">
@@ -144,10 +144,10 @@
 
     <article class="chapter chapter--flip reveal">
       <div class="chapter-media">
-        <video data-src="media/loop-signal.mp4" muted loop playsinline preload="none" poster="media/still-1.jpg" aria-hidden="true" tabindex="-1"></video>
+        <video data-src="media/loop-pursuit.mp4" muted loop playsinline preload="none" poster="media/loop-pursuit.jpg" aria-hidden="true" tabindex="-1"></video>
         <picture>
-          <source srcset="media/still-1.webp" type="image/webp">
-          <img src="media/still-1.jpg" width="1280" height="720" loading="lazy" alt="Low angle behind the Lada at a crossroads at night, orange street lamps burning in the fog.">
+          <source srcset="media/loop-pursuit.webp" type="image/webp">
+          <img src="media/loop-pursuit.jpg" width="1280" height="720" loading="lazy" alt="The car seen from the front at speed, police lights flashing in the fog behind it.">
         </picture>
       </div>
       <div class="chapter-copy">
@@ -159,10 +159,10 @@
 
     <article class="chapter reveal">
       <div class="chapter-media">
-        <video data-src="media/loop-cold.mp4" muted loop playsinline preload="none" poster="media/still-5.jpg" aria-hidden="true" tabindex="-1"></video>
+        <video data-src="media/loop-cold.mp4" muted loop playsinline preload="none" poster="media/loop-cold.jpg" aria-hidden="true" tabindex="-1"></video>
         <picture>
-          <source srcset="media/still-5.webp" type="image/webp">
-          <img src="media/still-5.jpg" width="1280" height="720" loading="lazy" alt="Tyre tracks curving through deep snow beside an industrial road at night.">
+          <source srcset="media/loop-cold.webp" type="image/webp">
+          <img src="media/loop-cold.jpg" width="1280" height="720" loading="lazy" alt="The car idles under a sodium lamp while snow falls through the light.">
         </picture>
       </div>
       <div class="chapter-copy">
@@ -174,10 +174,10 @@
 
     <article class="chapter chapter--flip reveal">
       <div class="chapter-media">
-        <video data-src="media/loop-zone.mp4" muted loop playsinline preload="none" poster="media/still-4.jpg" aria-hidden="true" tabindex="-1"></video>
+        <video data-src="media/loop-zone.mp4" muted loop playsinline preload="none" poster="media/loop-zone.jpg" aria-hidden="true" tabindex="-1"></video>
         <picture>
-          <source srcset="media/still-4.webp" type="image/webp">
-          <img src="media/still-4.jpg" width="1280" height="720" loading="lazy" alt="A helicopter searchlight sweeping a pool of pale light across the snow beside the road.">
+          <source srcset="media/loop-zone.webp" type="image/webp">
+          <img src="media/loop-zone.jpg" width="1280" height="720" loading="lazy" alt="Inside the radiation zone: the picture grains and drains of colour as the dose gauge climbs.">
         </picture>
       </div>
       <div class="chapter-copy">
@@ -189,10 +189,10 @@
 
     <article class="chapter reveal">
       <div class="chapter-media">
-        <video data-src="media/loop-night.mp4" muted loop playsinline preload="none" poster="media/still-8.jpg" aria-hidden="true" tabindex="-1"></video>
+        <video data-src="media/loop-plant.mp4" muted loop playsinline preload="none" poster="media/loop-plant.jpg" aria-hidden="true" tabindex="-1"></video>
         <picture>
-          <source srcset="media/still-8.webp" type="image/webp">
-          <img src="media/still-8.jpg" width="1280" height="720" loading="lazy" alt="The Last Signal log screen showing rank, last night against your best, recent nights and lifetime figures.">
+          <source srcset="media/loop-plant.webp" type="image/webp">
+          <img src="media/loop-plant.jpg" width="1280" height="720" loading="lazy" alt="The reactor's chimney and its red beacons pulsing through fog and snowfall.">
         </picture>
       </div>
       <div class="chapter-copy">
@@ -211,14 +211,14 @@
     <h2 id="gallery-h" class="reveal">From the road</h2>
 
     <ul class="grid" data-gallery>
-      <li><a href="media/still-1.jpg" data-caption="Eye level, looking toward the plant."><picture><source srcset="media/still-1.webp" type="image/webp"><img src="media/still-1.jpg" width="1280" height="720" loading="lazy" alt="Low view behind the Lada at a crossroads at night, orange street lamps in the fog."></picture></a></li>
-      <li><a href="media/still-2.jpg" data-caption="The plant, 250 metres out."><picture><source srcset="media/still-2.webp" type="image/webp"><img src="media/still-2.jpg" width="1280" height="720" loading="lazy" alt="Street lamps and the dark bulk of the reactor hall across an empty snowfield, red beacons on the stack above."></picture></a></li>
-      <li><a href="media/still-3.jpg" data-caption="Chase view."><picture><source srcset="media/still-3.webp" type="image/webp"><img src="media/still-3.jpg" width="1280" height="720" loading="lazy" alt="The Lada driving up a snowed-in road, seen from just behind and above."></picture></a></li>
-      <li><a href="media/still-4.jpg" data-caption="The helicopter’s searchlight."><picture><source srcset="media/still-4.webp" type="image/webp"><img src="media/still-4.jpg" width="1280" height="720" loading="lazy" alt="A pool of pale searchlight on the snow beside the road."></picture></a></li>
-      <li><a href="media/still-5.jpg" data-caption="Tracks in the snow."><picture><source srcset="media/still-5.webp" type="image/webp"><img src="media/still-5.jpg" width="1280" height="720" loading="lazy" alt="Tyre tracks curving across deep snow beside the road."></picture></a></li>
-      <li><a href="media/still-6.jpg" data-caption="Blue light in the fog."><picture><source srcset="media/still-6.webp" type="image/webp"><img src="media/still-6.jpg" width="1280" height="720" loading="lazy" alt="The Lada on a snowy road with a cold blue glow from emergency lights."></picture></a></li>
-      <li><a href="media/still-7.jpg" data-caption="The forest road."><picture><source srcset="media/still-7.webp" type="image/webp"><img src="media/still-7.jpg" width="1280" height="720" loading="lazy" alt="The Lada driving between dead pine trees on a snowy forest road."></picture></a></li>
-      <li><a href="media/still-8.jpg" data-caption="The log."><picture><source srcset="media/still-8.webp" type="image/webp"><img src="media/still-8.jpg" width="1280" height="720" loading="lazy" alt="The log screen with rank, last night and recent nights."></picture></a></li>
+      <li><a href="media/still-01.jpg" data-caption="26 April 1986, 01:23:45"><picture><source srcset="media/still-01.webp" type="image/webp"><img src="media/still-01.jpg" width="1280" height="720" loading="lazy" alt="The Last Signal title screen: the title over a painting of a red car on a snowy road facing the power plant, dated 26.04.1986."></picture></a></li>
+      <li><a href="media/still-02.jpg" data-caption="One road out"><picture><source srcset="media/still-02.webp" type="image/webp"><img src="media/still-02.jpg" width="1280" height="720" loading="lazy" alt="Eye-level view past the red car down a dark road toward sodium lamps and the plant's red beacons, snow falling."></picture></a></li>
+      <li><a href="media/still-03.jpg" data-caption="The chase"><picture><source srcset="media/still-03.webp" type="image/webp"><img src="media/still-03.jpg" width="1280" height="720" loading="lazy" alt="The car seen from the front at speed, a truck beside it and blue police lights in the fog behind."></picture></a></li>
+      <li><a href="media/still-05.jpg" data-caption="Through the snowbank"><picture><source srcset="media/still-05.webp" type="image/webp"><img src="media/still-05.jpg" width="1280" height="720" loading="lazy" alt="The red car seen side-on, half hidden in a burst of snow thrown up from a roadside bank, lamps glowing behind."></picture></a></li>
+      <li><a href="media/still-07.jpg" data-caption="The plant"><picture><source srcset="media/still-07.webp" type="image/webp"><img src="media/still-07.jpg" width="1280" height="720" loading="lazy" alt="A sodium street lamp lights a snowbank; beyond it the reactor buildings stand dark, their red beacons lit."></picture></a></li>
+      <li><a href="media/still-08.jpg" data-caption="Toward the reactor"><picture><source srcset="media/still-08.webp" type="image/webp"><img src="media/still-08.jpg" width="1280" height="720" loading="lazy" alt="The dark mass of the power plant and its red beacons seen from the road at night."></picture></a></li>
+      <li><a href="media/still-09.jpg" data-caption="The zone"><picture><source srcset="media/still-09.webp" type="image/webp"><img src="media/still-09.jpg" width="1280" height="720" loading="lazy" alt="Inside the radiation zone: the car stands colourless and grainy in the snow, lamps far behind it."></picture></a></li>
+      <li><a href="media/still-10.jpg" data-caption="The cold"><picture><source srcset="media/still-10.webp" type="image/webp"><img src="media/still-10.jpg" width="1280" height="720" loading="lazy" alt="The red car idles side-on in falling snow, headlights on, a dark apartment block behind."></picture></a></li>
     </ul>
   </div>
 </section>

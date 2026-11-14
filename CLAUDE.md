@@ -17,12 +17,12 @@ Local preview: `python3 -m http.server 8000`.
 The trailer session writes everything to `~/Projects/last-signal-media/deliverables/` with a `manifest.json`
 (`file, role, width, height, duration, bytes, alt, caption`). Copy files into `media/` using the same names, then update the `alt` text and captions in `index.html` from the manifest.
 Roles and names used by the page:
-- `last-signal-trailer-1080.mp4`, `last-signal-trailer-720.mp4`, `trailer.vtt` (captions, RU and EN radio lines), `poster.jpg`
-- `loop-hero.mp4`, `loop-chase.mp4`, `loop-signal.mp4`, `loop-cold.mp4`, `loop-zone.mp4`, `loop-night.mp4` (muted loops)
-- `still-1..8` (`.jpg` and `.webp`), `phone-1.mp4` plus `phone-1.jpg` (portrait iPhone clip), `og-image.jpg` (1200x630)
-Budgets: trailer 1080p at most 45 MB, loops 3 to 6 MB, stills about 400 KB, nothing above 50 MB, whole set under 250 MB (GitHub: 100 MB per file, Pages about 1 GB).
-**The current images are placeholders** (real in-engine captures from the Editor, not the trailer stills). The loops and trailer do not exist yet:
-`main.js` attaches a loop only if its file exists, so the page works with stills until they land. The trailer `<video>` has a poster and shows its poster until the file exists.
+- `trailer-1080p.mp4`, `trailer-720p.mp4`, `trailer-poster.jpg`, `trailer.en.vtt`, `trailer.ru.vtt`
+- `loop-hero.mp4` (poster `hero.jpg/.webp`), `loop-chase|pursuit|cold|zone|plant.mp4` with matching `.jpg/.webp` posters (muted loops, 1280x720)
+- `still-01..10` (`.jpg` and `.webp`, 2560x1440; the gallery shows 8 of them), `og-image.jpg` (1200x630)
+- `phone-1.jpg/.webp`: **still a placeholder.** `phone-1.mp4` (Glenn's portrait iPhone recording, 1080x2340, at most 8 MB) has not been delivered; `main.js` attaches it automatically when the file exists.
+Budgets: trailer 1080p at most 45 MB, loops 3 to 6 MB, nothing above 50 MB, whole set under 250 MB (GitHub: 100 MB per file, Pages about 1 GB).
+`main.js` attaches a loop only if its file exists; the trailer `<video>` shows its poster until played.
 
 ## Design system
 - Cold, dark, one amber accent. Tokens in `:root` (`--bg --bg-deep --ink --body --dim --line --amber --cold`); components only use tokens.
