@@ -41,4 +41,4 @@ Budgets: trailer 1080p at most 45 MB, loops 3 to 6 MB, nothing above 50 MB, whol
 - Credits mirror `MenuKit.CreditsText` in the game and `Docs/AudioSources.md`; update them when the game's credits change.
 
 ## Before publishing
-Replace the placeholder images and add the real trailer; run Lighthouse (aim 90 or more everywhere); test in Safari on an iPhone (inline autoplay, Low Power Mode); check the Open Graph preview; then add a card to `#projects` in `glennsvendsen.github.io` (see its `CLAUDE.md`, "Adding a side project").
+Add the portrait iPhone clip (phone-1.mp4); run Lighthouse (aim 90 or more everywhere); test in Safari on an iPhone (inline autoplay, Low Power Mode); check the Open Graph preview; then add a card to `#projects` in `glennsvendsen.github.io` (see its `CLAUDE.md`, "Adding a side project").
