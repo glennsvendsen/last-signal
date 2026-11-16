@@ -200,3 +200,12 @@ dd { margin: 0; color: var(--ink); }
 .hero-cta { margin: 1.8rem 0 0; }
 .dl-row { display: flex; flex-wrap: wrap; align-items: center; gap: 1.2rem; margin: 2.2rem 0 2.4rem; }
 .dl-count { letter-spacing: .14em; text-transform: uppercase; }
+
+/* ------------------------------------------------------------ garage cars */
+.cars { list-style: none; margin: clamp(2rem, 5vw, 3.2rem) 0 0; padding: 0; display: grid; gap: .8rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr)); }
+@media (min-width: 1000px) { .cars { grid-template-columns: repeat(5, 1fr); } }
+.car picture { display: block; aspect-ratio: 16 / 9; overflow: hidden; border: 1px solid var(--line); background: #000; }
+.car img { width: 100%; height: 100%; object-fit: cover; }
+.car-name { margin: .7rem 0 .15rem; font: .78rem/1.5 var(--mono); letter-spacing: .16em; color: var(--ink); }
+.car-name span { margin-left: .5em; color: var(--dim); letter-spacing: .08em; }
+.car-note { margin: 0; font-size: .9rem; color: var(--body); }

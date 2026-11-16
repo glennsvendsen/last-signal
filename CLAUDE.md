@@ -20,6 +20,8 @@ Roles and names used by the page:
 - `trailer-1080p.mp4`, `trailer-720p.mp4`, `trailer-poster.jpg`, `trailer.en.vtt`, `trailer.ru.vtt`
 - `loop-hero.mp4` (poster `hero.jpg/.webp`), `loop-chase|pursuit|cold|zone|plant.mp4` with matching `.jpg/.webp` posters (muted loops, 1280x720)
 - `still-01..10` (`.jpg` and `.webp`, 2560x1440; the gallery shows 8 of them), `og-image.jpg` (1200x630)
+- `car-1..5` (`.jpg`/`.webp`, 1280x720: the garage's five cars in `Garage.Cars` order) and `garage` (2560x1440, the title menu's garage page), shown in chapter VI
+- Stills since 0.3.0 are PNGs captured straight from the Game view (`shots/stills03/`, staged with `AgentScripts/Demo/Fresh03.cs` in SnowChase); `stills.json` takes a `.png` src or a take plus `t`
 - `phone-1.jpg/.webp`: **still a placeholder.** `phone-1.mp4` (Glenn's portrait iPhone recording, 1080x2340, at most 8 MB) has not been delivered; `main.js` attaches it automatically when the file exists.
 Budgets: trailer 1080p at most 45 MB, loops 3 to 6 MB, nothing above 50 MB, whole set under 250 MB (GitHub: 100 MB per file, Pages about 1 GB).
 `main.js` attaches a loop only if its file exists; the trailer `<video>` shows its poster until played.
