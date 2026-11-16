@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Last Signal · An iPhone driving game · Pripyat, 26 April 1986</title>
-<meta name="description" content="Last Signal is an iPhone driving game: one road out of Pripyat, one cold night, a radio that will not stop talking. In development by Glenn Svendsen.">
+<title>Last Signal · A night-driving game for Mac · Pripyat, 26 April 1986</title>
+<meta name="description" content="Last Signal is a night-driving game for Mac: one road out of Pripyat, one cold night, a radio that will not stop talking. Playable prototype by Glenn Svendsen.">
 <meta name="theme-color" content="#05070b">
 <link rel="canonical" href="https://glennsvendsen.github.io/last-signal/">
 <link rel="icon" href="favicon.ico" sizes="48x48">
@@ -13,7 +13,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Last Signal">
-<meta property="og:description" content="One road out of Pripyat. One cold night. A radio that will not stop talking. An iPhone driving game in development.">
+<meta property="og:description" content="One road out of Pripyat. One cold night. A radio that will not stop talking. A playable prototype for Mac.">
 <meta property="og:url" content="https://glennsvendsen.github.io/last-signal/">
 <meta property="og:image" content="https://glennsvendsen.github.io/last-signal/media/og-image.jpg">
 <meta property="og:image:width" content="1200">
@@ -30,9 +30,9 @@
   "@context": "https://schema.org",
   "@type": "VideoGame",
   "name": "Last Signal",
-  "description": "An iPhone driving game set in Pripyat on 26 April 1986: one road out, one cold night, a radio that will not stop talking.",
+  "description": "A night-driving game for Mac set in Pripyat on 26 April 1986: one road out, one cold night, a radio that will not stop talking.",
   "genre": ["Driving", "Action"],
-  "gamePlatform": "iOS",
+  "gamePlatform": "macOS",
   "applicationCategory": "Game",
   "url": "https://glennsvendsen.github.io/last-signal/",
   "image": "https://glennsvendsen.github.io/last-signal/media/og-image.jpg",
@@ -50,6 +50,7 @@
     <a href="#trailer">Trailer</a>
     <a href="#night">The night</a>
     <a href="#gallery">Gallery</a>
+    <a href="#play">Download</a>
     <a href="#credits">Credits</a>
   </nav>
 </header>
@@ -72,7 +73,8 @@
     <p class="stamp" data-type>26.04.1986 · 01:23:45</p>
     <h1 id="title">LAST<br>SIGNAL</h1>
     <p class="lede">One road out of Pripyat. One cold night.<br>A radio that will not stop talking.</p>
-    <p class="status"><span class="dot" aria-hidden="true"></span>An iPhone driving game · In development</p>
+    <p class="status"><span class="dot" aria-hidden="true"></span>Playable prototype · macOS</p>
+    <p class="hero-cta"><a class="btn" href="#play">Download the prototype</a></p>
   </div>
 
   <a class="cue" href="#trailer" aria-label="Scroll to the trailer"><span></span></a>
@@ -223,30 +225,26 @@
   </div>
 </section>
 
-<!-- ============================================================ IPHONE -->
-<section class="band" id="iphone" aria-labelledby="iphone-h">
-  <div class="wrap phone-row">
-    <div class="phone reveal">
-      <div class="phone-frame">
-        <video data-src="media/phone-1.mp4" muted loop playsinline preload="none" poster="media/phone-1.jpg" aria-hidden="true" tabindex="-1"></video>
-        <picture>
-          <source srcset="media/phone-1.webp" type="image/webp">
-          <img src="media/phone-1.jpg" width="585" height="1266" loading="lazy" alt="The game in portrait on an iPhone: the Lada driving a snowy road at night.">
-        </picture>
-      </div>
-    </div>
-    <div class="phone-copy">
-      <p class="label reveal">05 · On your iPhone</p>
-      <h2 id="iphone-h" class="reveal">Built for the phone</h2>
-      <dl class="facts reveal">
-        <div><dt>Platform</dt><dd>iPhone</dd></div>
-        <div><dt>Play</dt><dd>Portrait or landscape</dd></div>
-        <div><dt>Mode</dt><dd>Endless run, chained tasks</dd></div>
-        <div><dt>Camera</dt><dd>Chase, low, standard, high</dd></div>
-        <div><dt>Voice</dt><dd>Russian radio, English subtitles</dd></div>
-        <div><dt>Status</dt><dd>In development</dd></div>
-      </dl>
-    </div>
+<!-- ============================================================ PLAY -->
+<section class="band" id="play" aria-labelledby="play-h">
+  <div class="wrap narrow">
+    <p class="label reveal">05 · Play it</p>
+    <h2 id="play-h" class="reveal">Playable prototype</h2>
+    <p class="body reveal">An early build of the whole night: the city, the plant, the militsiya, the radio. Rough edges included. Tell me what broke and how far you got.</p>
+    <p class="reveal dl-row">
+      <a class="btn" href="https://github.com/glennsvendsen/last-signal/releases/download/v0.1.0-prototype/LastSignal-Installer.dmg" data-dl>Download for Mac · 0.1.0</a>
+      <span class="muted dl-count" data-dl-count hidden></span>
+    </p>
+    <dl class="facts reveal">
+      <div><dt>Platform</dt><dd>macOS 12 or later, Apple silicon (M1 and newer)</dd></div>
+      <div><dt>Size</dt><dd>98 MB disk image</dd></div>
+      <div><dt>Install</dt><dd>Open the disk image, drag Last Signal to Applications. Signed and notarised by Apple.</dd></div>
+      <div><dt>Drive</dt><dd>W / ↑ throttle · S / ↓ brake and reverse · A D / ← → steer</dd></div>
+      <div><dt>Also</dt><dd>C camera · M map · Esc pause · Space horn</dd></div>
+      <div><dt>Voice</dt><dd>Russian radio, English subtitles</dd></div>
+      <div><dt>Status</dt><dd>Prototype · 0.1.0</dd></div>
+    </dl>
+    <p class="muted reveal"><a href="https://github.com/glennsvendsen/last-signal/issues/new?template=feedback.yml">Send feedback</a> · <a href="https://github.com/glennsvendsen/last-signal/releases">All releases</a></p>
   </div>
 </section>
 

@@ -93,4 +93,16 @@
       else if (e.key === 'ArrowRight') show(index + 1);
     });
   }
+
+  // ---------------------------------------------------------------- download count (GitHub release assets; hidden if the API is unreachable or rate-limited)
+  const count = document.querySelector('[data-dl-count]');
+  if (count) {
+    fetch('https://api.github.com/repos/glennsvendsen/last-signal/releases', { headers: { Accept: 'application/vnd.github+json' } })
+      .then((r) => (r.ok ? r.json() : Promise.reject()))
+      .then((rel) => {
+        const n = rel.reduce((sum, r) => sum + (r.assets || []).reduce((a, x) => a + (x.download_count || 0), 0), 0);
+        if (n > 0) { count.textContent = n.toLocaleString('en') + (n === 1 ? ' download' : ' downloads'); count.hidden = false; }
+      })
+      .catch(() => {});
+  }
 })();

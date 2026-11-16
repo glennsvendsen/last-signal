@@ -3,9 +3,9 @@
 Guidance for Claude Code when working in this repository.
 
 ## Project
-Showcase page for **Last Signal**, an iPhone driving game (Unity, in development). Static site, no build step, no dependencies.
+Showcase and download page for **Last Signal**, a night-driving game for Mac (Unity, playable prototype). Static site, no build step, no dependencies.
 Auto-deploys to GitHub Pages on push to `main` (`.github/workflows/deploy.yml`, copied from the portfolio repo).
-Showcase only: no store badges, no Apple marks, no release date, no download link. Status wording is "In development".
+No store badges, no Apple marks, no release date. The `#play` section links the notarised macOS disk image attached to this repo's GitHub releases (tag per version, e.g. `v0.1.0-prototype`, marked pre-release); update the link, version, size and status there for each release. Status wording is "Playable prototype · macOS". `main.js` shows the summed release download count (GitHub API, hidden on failure). Feedback goes through `.github/ISSUE_TEMPLATE/feedback.yml`.
 Local preview: `python3 -m http.server 8000`.
 
 ## Files

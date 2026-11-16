@@ -1,0 +1,33 @@
+name: Prototype feedback
+description: Tell us how the Last Signal prototype played
+title: "[Feedback] "
+labels: [feedback]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Version
+      description: Bottom-right corner of the title screen
+      placeholder: PROTOTYPE 0.1.0
+  - type: input
+    id: mac
+    attributes:
+      label: Mac model and macOS version
+      placeholder: MacBook Air M2, macOS 15
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: A bug, something confusing, or something you liked
+    validations:
+      required: true
+  - type: input
+    id: far
+    attributes:
+      label: How far did you get?
+      placeholder: Best km, or where the run ended
+  - type: dropdown
+    id: smooth
+    attributes:
+      label: Did it run smoothly?
+      options: ["Yes", "Mostly, small stutters", "No, it stuttered a lot"]

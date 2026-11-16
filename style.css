@@ -193,3 +193,10 @@ dd { margin: 0; color: var(--ink); }
   .js .reveal { opacity: 1; transform: none; }
   video[aria-hidden="true"] { display: none; }       /* decorative loops never autoplay: the still shows instead */
 }
+
+/* download */
+.btn { display: inline-block; padding: .95rem 1.5rem; border: 1px solid var(--amber); color: var(--amber); font: .8rem/1 var(--mono); letter-spacing: .2em; text-transform: uppercase; text-decoration: none; background: rgba(237, 189, 107, .06); transition: background .3s var(--ease), color .3s var(--ease); }
+.btn:hover, .btn:focus-visible { background: var(--amber); color: var(--bg); }
+.hero-cta { margin: 1.8rem 0 0; }
+.dl-row { display: flex; flex-wrap: wrap; align-items: center; gap: 1.2rem; margin: 2.2rem 0 2.4rem; }
+.dl-count { letter-spacing: .14em; text-transform: uppercase; }
