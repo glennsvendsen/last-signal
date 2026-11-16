@@ -24,6 +24,8 @@
 <link rel="preload" href="fonts/plex-mono.woff" as="font" type="font/woff" crossorigin>
 <link rel="stylesheet" href="style.css">
 <script>document.documentElement.classList.add('js')</script>
+<!-- Cookie-free analytics (Umami, shared with the main site). Only counts visits on the live domain. -->
+<script defer src="https://cloud.umami.is/script.js" data-website-id="984de795-976a-4859-818a-95177710cb59" data-domains="glennsvendsen.github.io"></script>
 
 <script type="application/ld+json">
 {
@@ -74,7 +76,7 @@
     <h1 id="title">LAST<br>SIGNAL</h1>
     <p class="lede">One road out of Pripyat. One cold night.<br>A radio that will not stop talking.</p>
     <p class="status"><span class="dot" aria-hidden="true"></span>Playable prototype · macOS</p>
-    <p class="hero-cta"><a class="btn" href="#play">Download the prototype</a></p>
+    <p class="hero-cta"><a class="btn" href="#play" data-umami-event="ls-cta-play">Download the prototype</a></p>
   </div>
 
   <a class="cue" href="#trailer" aria-label="Scroll to the trailer"><span></span></a>
@@ -232,7 +234,7 @@
     <h2 id="play-h" class="reveal">Playable prototype</h2>
     <p class="body reveal">An early build of the whole night: the city, the plant, the militsiya, the radio. Rough edges included. Tell me what broke and how far you got.</p>
     <p class="reveal dl-row">
-      <a class="btn" href="https://github.com/glennsvendsen/last-signal/releases/download/v0.1.0-prototype/LastSignal-Installer.dmg" data-dl>Download for Mac · 0.1.0</a>
+      <a class="btn" href="https://github.com/glennsvendsen/last-signal/releases/download/v0.1.0-prototype/LastSignal-Installer.dmg" data-dl data-umami-event="ls-download" data-umami-event-version="0.1.0">Download for Mac · 0.1.0</a>
       <span class="muted dl-count" data-dl-count hidden></span>
     </p>
     <dl class="facts reveal">
@@ -244,7 +246,7 @@
       <div><dt>Voice</dt><dd>Russian radio, English subtitles</dd></div>
       <div><dt>Status</dt><dd>Prototype · 0.1.0</dd></div>
     </dl>
-    <p class="muted reveal"><a href="https://github.com/glennsvendsen/last-signal/issues/new?template=feedback.yml">Send feedback</a> · <a href="https://github.com/glennsvendsen/last-signal/releases">All releases</a></p>
+    <p class="muted reveal"><a href="https://github.com/glennsvendsen/last-signal/issues/new?template=feedback.yml" data-umami-event="ls-feedback">Send feedback</a> · <a href="https://github.com/glennsvendsen/last-signal/releases" data-umami-event="ls-releases">All releases</a></p>
   </div>
 </section>
 

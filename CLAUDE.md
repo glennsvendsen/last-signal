@@ -36,7 +36,7 @@ Budgets: trailer 1080p at most 45 MB, loops 3 to 6 MB, nothing above 50 MB, whol
 - Decorative loops are `aria-hidden`, muted, `playsinline`, `preload="none"`, and play only while on screen.
 - The trailer has native controls, a poster and a WebVTT captions track. Never autoplay sound.
 - Images: `width`/`height` always set, `loading="lazy"` below the fold, WebP with a JPG fallback.
-- No analytics, cookies or third-party embeds. Everything is self-hosted.
+- No cookies or third-party embeds. Everything is self-hosted except one analytics script: cookie-free Umami Cloud, shared with the main site (`glennsvendsen.github.io`, same website ID, `data-domains` limits it to the live domain). Click events are prefixed `ls-` (`ls-download`, `ls-cta-play`, `ls-feedback`, `ls-releases`). Download totals also come from the GitHub releases API in `main.js`.
 - Respectful tone about the real disaster: no gore, no casualty gamification, no claims about real events. The page says "inspired by".
 - Credits mirror `MenuKit.CreditsText` in the game and `Docs/AudioSources.md`; update them when the game's credits change.
 
