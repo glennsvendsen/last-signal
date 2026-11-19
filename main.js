@@ -64,6 +64,37 @@
     document.addEventListener('visibilitychange', () => { if (document.hidden) loops.forEach((v) => v.pause()); });
   }
 
+  // ---------------------------------------------------------------- analytics (cookie-free Umami; a no-op when the script is blocked or off the live domain)
+  // Links carry data-umami-event in the HTML (downloads, feedback, releases...). These are the events HTML attributes cannot express.
+  const track = (name, data) => { try { if (window.umami) window.umami.track(name, data); } catch {} };
+
+  document.querySelectorAll('[data-bar] nav a').forEach((a) =>
+    a.addEventListener('click', () => track('ls-nav', { section: a.getAttribute('href').slice(1) })));
+
+  document.querySelectorAll('[data-soon]').forEach((el) =>
+    el.addEventListener('click', () => track('ls-soon-click', { platform: el.dataset.soon })));
+
+  const trailer = document.querySelector('#trailer video');
+  if (trailer) {
+    const marks = { 25: false, 50: false, 75: false };
+    let started = false;
+    trailer.addEventListener('play', () => { if (!started) { started = true; track('ls-trailer-play'); } });
+    trailer.addEventListener('timeupdate', () => {
+      if (!trailer.duration) return;
+      const pct = (trailer.currentTime / trailer.duration) * 100;
+      for (const m in marks) if (!marks[m] && pct >= m) { marks[m] = true; track('ls-trailer-progress', { percent: Number(m) }); }
+    });
+    trailer.addEventListener('ended', () => track('ls-trailer-complete'));
+  }
+
+  // Which sections people actually reach (once each per visit).
+  if ('IntersectionObserver' in window) {
+    const seen = new IntersectionObserver((entries) => {
+      for (const e of entries) if (e.isIntersecting) { track('ls-section-view', { section: e.target.id }); seen.unobserve(e.target); }
+    }, { threshold: 0.3 });
+    document.querySelectorAll('main section[id]:not(#top)').forEach((s) => seen.observe(s));
+  }
+
   // ---------------------------------------------------------------- gallery lightbox
   const box = document.querySelector('[data-lightbox]');
   const links = [...document.querySelectorAll('[data-gallery] a')];
@@ -82,7 +113,7 @@
     };
     const open = (i, from) => { opener = from; show(i); if (!box.open) box.showModal(); };
 
-    links.forEach((a, i) => a.addEventListener('click', (e) => { e.preventDefault(); open(i, a); }));
+    links.forEach((a, i) => a.addEventListener('click', (e) => { e.preventDefault(); open(i, a); track('ls-gallery-open', { image: a.dataset.caption || String(i + 1) }); }));
     box.querySelector('[data-lb-close]').addEventListener('click', () => box.close());
     box.querySelector('[data-lb-prev]').addEventListener('click', () => show(index - 1));
     box.querySelector('[data-lb-next]').addEventListener('click', () => show(index + 1));

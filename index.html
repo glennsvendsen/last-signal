@@ -95,7 +95,7 @@
         <source src="media/trailer-1080p.mp4" type="video/mp4">
         <track kind="captions" src="media/trailer.en.vtt" srclang="en" label="English" default>
         <track kind="captions" src="media/trailer.ru.vtt" srclang="ru" label="Русский">
-        <p>Your browser cannot play this video. <a href="media/trailer-1080p.mp4">Download the trailer</a>.</p>
+        <p>Your browser cannot play this video. <a href="media/trailer-1080p.mp4" data-umami-event="ls-trailer-file">Download the trailer</a>.</p>
       </video>
       <figcaption>Real-time footage captured in-engine. Sound on.</figcaption>
     </figure>
@@ -277,9 +277,9 @@
     <h2 id="play-h" class="reveal">Playable prototype</h2>
     <p class="body reveal">An early build of the whole night: the city, the plant, the militsiya, the radio. Rough edges included. Tell me what broke and how far you got.</p>
     <p class="reveal dl-row">
-      <a class="btn" href="https://github.com/glennsvendsen/last-signal/releases/download/v0.3.0-prototype/LastSignal-Installer.dmg" data-dl data-umami-event="ls-download" data-umami-event-version="0.3.0">Download for Mac · 0.3.0</a>
-      <a class="btn" href="https://github.com/glennsvendsen/last-signal/releases/download/v0.3.0-windows-prototype/LastSignal-Windows.zip" data-dl data-umami-event="ls-download-win" data-umami-event-version="0.3.0">Download for Windows · 0.3.0</a>
-      <span class="btn btn--soon" aria-disabled="true">iOS · Coming</span>
+      <a class="btn" href="https://github.com/glennsvendsen/last-signal/releases/download/v0.3.0-prototype/LastSignal-Installer.dmg" data-dl data-umami-event="ls-download" data-umami-event-platform="mac" data-umami-event-version="0.3.0">Download for Mac · 0.3.0</a>
+      <a class="btn" href="https://github.com/glennsvendsen/last-signal/releases/download/v0.3.0-windows-prototype/LastSignal-Windows.zip" data-dl data-umami-event="ls-download-win" data-umami-event-platform="windows" data-umami-event-version="0.3.0">Download for Windows · 0.3.0</a>
+      <span class="btn btn--soon" aria-disabled="true" data-soon="ios">iOS · Coming</span>
       <span class="muted dl-count" data-dl-count hidden></span>
     </p>
     <dl class="facts reveal">
@@ -324,7 +324,7 @@
       <div><dt>Made with</dt><dd>Unity</dd></div>
     </dl>
 
-    <p class="maker reveal">Made by <a href="https://glennsvendsen.github.io/">Glenn Svendsen</a>.</p>
+    <p class="maker reveal">Made by <a href="https://glennsvendsen.github.io/" data-umami-event="ls-maker">Glenn Svendsen</a>.</p>
   </div>
 </section>
 
@@ -333,7 +333,7 @@
 <footer class="foot">
   <div class="wrap">
     <p>Last Signal is a work of fiction inspired by the night of 26 April 1986. Footage was captured in-engine.</p>
-    <p class="muted">© <span data-year>2026</span> Glenn Svendsen · <a href="privacy.html">Privacy</a></p>
+    <p class="muted">© <span data-year>2026</span> Glenn Svendsen · <a href="privacy.html" data-umami-event="ls-privacy">Privacy</a></p>
   </div>
 </footer>
 
