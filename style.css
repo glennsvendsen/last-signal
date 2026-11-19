@@ -212,3 +212,11 @@ dd { margin: 0; color: var(--ink); }
 .car-name { margin: .7rem 0 .15rem; font: .78rem/1.5 var(--mono); letter-spacing: .16em; color: var(--ink); }
 .car-name span { margin-left: .5em; color: var(--dim); letter-spacing: .08em; }
 .car-note { margin: 0; font-size: .9rem; color: var(--body); }
+
+/* privacy page */
+.legal h1 { margin: 0 0 .8rem; font: clamp(2.4rem, 7vw, 4rem)/1 var(--display); text-transform: uppercase; color: var(--ink); }
+.legal h2 { margin: 2.8rem 0 .9rem; font-size: clamp(1.2rem, 3vw, 1.5rem); }
+.legal ul.body { padding-left: 1.2rem; }
+.legal ul.body li { margin: 0 0 .8rem; }
+.legal a { color: var(--amber); }
+.foot a { color: inherit; }
