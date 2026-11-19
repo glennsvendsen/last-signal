@@ -91,7 +91,7 @@
   if ('IntersectionObserver' in window) {
     const seen = new IntersectionObserver((entries) => {
       for (const e of entries) if (e.isIntersecting) { track('ls-section-view', { section: e.target.id }); seen.unobserve(e.target); }
-    }, { threshold: 0.3 });
+    }, { rootMargin: '0px 0px -50% 0px' });          // counts once a section reaches mid-screen, however tall it is
     document.querySelectorAll('main section[id]:not(#top)').forEach((s) => seen.observe(s));
   }
 
